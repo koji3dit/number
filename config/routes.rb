@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'home#index'
+
+  get 'home/authentication'
+
   devise_for :users, module: :users
   
   
